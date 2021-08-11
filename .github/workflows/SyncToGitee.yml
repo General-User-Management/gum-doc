@@ -23,3 +23,4 @@ jobs:
         force_update: true  # 启用后，强制同步，即强制覆盖目的端仓库
         # static_list: "gum-doc,gum-client,gum-svc,gum-jwt-express,gum-auth-express,gum-information-point"  # 静态同步列表，在此填写需要同步的仓库名称，可填写多个
         timeout: '600s'  # git超时设置，超时后会自动重试git操作
+        account_type: org
