@@ -2,7 +2,7 @@ name: Cron Sync GUM Github Repos To Gitee
 
 on:
   schedule:
-    - cron:  '37 5,11,18,22 * * *'
+    - cron:  '37 21,3,10,14 * * *'
 
 jobs:
   build:
