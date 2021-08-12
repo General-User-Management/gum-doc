@@ -1,4 +1,4 @@
-name: Sync GUM Github Repos To Gitee
+name: On master Sync GUM Github Repos To Gitee
 
 on:
   push:
