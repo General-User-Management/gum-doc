@@ -15,11 +15,16 @@
     * 权限所使用的元数据（机构、用户、角色、接口、页面）等的增删查改功能；
     * APP 应用的创建以及对应APP
     * 管理对应的GUM调用权限；1.GUM元数据增删查改接口权限，2.gum-client 客户端对应 function 调用权限 
-- gum-admin-front  
+- gum-admin-frontend    
 GUM系统的后台管理系统的前端页面服务
-- gum-token-manager  
+- gum-auth-manager  
     - 提供 token 的签发功能
     - 提供生成 token 所使用的 secret 获取
+    - 提供API操作鉴权功能
+- gum-ui-access-point  
+GUM系统的后台管理系统的前端页面服务所需的后端服务群API网关
+- gum-api-gateway  
+GUM 对外接口网关服务
 
 > 1. gum-jwt-express\gum-auth-express 两个中间件和 gum-client 客户端都是以 npm 模块发布出去
 > 2. GUM后台管理系统本身也要登录和不同用户的鉴权操作，因此本身GUM后台也是GUM系统就是一个应用。换句话说，GUM后台系统就是使用GUM 权限管理功能的第一个应用；
