@@ -1,5 +1,20 @@
 <img src="https://general-user-management.github.io/gum-doc/image/gum-logo-default.png" alt="gum-logo" width="45%">
 
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [GUM - A general user management system](#gum-a-general-user-management-system)
+- [Architecture diagram](#architecture-diagram)
+- [Features](#features)
+- [Usage](#usage)
+- [Design](#design)
+- [Deployment](#deployment)
+
+<!-- /code_chunk_output -->
+
+
 # GUM - A general user management system
 **GUM(general user management system,通用用户管理系统)**,提供一站式的用户权限管理功能。其特点是灵活，方便，且功能强大。提供包括前端的响应式的权限设置，后端API认证和鉴权。
 同时，设计之初秉承尽可能少地嵌入目标业务系统理念，最大限度地与目标系统解耦
@@ -26,7 +41,7 @@
 6. [GUM实践案例]()
 
 # Design
-1. [系统架构设计](https://github.com/General-User-Management/gum-doc/blob/master/document/README.md)
+1. [系统架构设计](https://github.com/General-User-Management/gum-doc/blob/master/document/architecture.md)
 2. [权限元数据设计]() 
 
 # Deployment
