@@ -26,7 +26,7 @@
 6. [GUM实践案例]()
 
 # Design
-1. [系统架构设计](https://github.com/General-User-Management/gum-svc/blob/master/README.md)
+1. [系统架构设计](https://github.com/General-User-Management/gum-doc/blob/master/document/README.md)
 2. [权限元数据设计]() 
 
 # Deployment
