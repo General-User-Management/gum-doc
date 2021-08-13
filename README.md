@@ -41,7 +41,7 @@
 6. [GUM实践案例]()
 
 # Design
-1. [系统架构设计](https://github.com/General-User-Management/gum-doc/blob/master/document/architecture.md)
+1. [系统架构设计](https://github.com/General-User-Management/gum-doc/blob/master/markdown/architecture.md)
 2. [权限元数据设计]() 
 
 # Deployment
