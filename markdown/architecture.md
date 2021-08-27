@@ -1,7 +1,7 @@
 [TOC]
 
 #### 架构图
-![架构图](../image/gum架构.png)
+![架构图](../source/_static/gum架构.png)
 
 #### 服务职责
 - gum-svc  
