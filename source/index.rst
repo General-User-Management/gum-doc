@@ -28,6 +28,11 @@
    usage
 
 .. toctree::
+   :maxdepth: 2
+   
+   api
+
+.. toctree::
    :maxdepth: 3
 
    design
