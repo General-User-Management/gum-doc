@@ -1,2 +1,2 @@
 # 架构设计 
-<img src="./_static/gum架构.png" alt="Architecture" width="100%">
+<img src="./_static/architecture.png" alt="Architecture" width="100%">

@@ -1,7 +1,7 @@
 # 设计
 ## 系统架构设计
 ### 架构图
-<img src="./_static/gum架构.png" alt="Architecture" width="100%">
+<img src="./_static/architecture.png" alt="Architecture" width="100%">
 
 ### 服务职责
 - gum-svc  
