@@ -32,22 +32,102 @@ run()
 ```
 #### 2.option 参数说明
 *gumClient.connect(url,option)* 中的 `url/option` 参数说明如下
-参数 | 类型 | 是否必填 | 默认值 | 说明 
----|--- |--- |--- |---
-url | String | 是 | - | gum-svc 服务 BaseUrl
-option | Object | 是 | - | 实例连接 option 选项
-option.healthPath | String | 否 | /health | 保持连接健康，检查心跳地址
-option.healthProbe | Object | 否 | - | 实例连接 option 选项
-option.healthProbe.period | Int | 否 | 60 | 心跳检查周期（秒）
-option.healthProbe.timeout | Int | 否 | 5 | 1次检查的超时时间（秒）
-option.maxRedirects | Int | 否 | 5 | 最大重连次数
-option.timeout | Int | 否 | 5 | 请求超时时间（秒）
-option.auto_reconnect | boolean | 否 | true | 是否开启自动重连
+<table>
+    <tr>
+        <td colspan="5" bgcolor = "#808000" align="center">option 参数说明</td>
+    <tr>
+    <tr>
+        <td align="center">参数</td>
+        <td align="center"> 类型</td>
+        <td align="center">是否必填</td>
+        <td align="center"> 默认值</td>
+        <td align="center">说明</td>
+    <tr>
+    <tr>
+        <td align="center">url</td>
+        <td align="center">String</td>
+        <td align="center">是</td>
+        <td align="center">-</td>
+        <td align="center">gum-svc 服务 BaseUrl</td>
+    <tr>
+    <tr>
+        <td align="center">option</td>
+        <td align="center">Object</td>
+        <td align="center">是</td>
+        <td align="center">-</td>
+        <td align="center">实例连接 option 选项</td>
+    <tr>
+    <tr>
+        <td align="center">option.healthPath</td>
+        <td align="center">String</td>
+        <td align="center">否</td>
+        <td align="center">/health</td>
+        <td align="center">保持连接健康，检查心跳地址</td>
+    <tr>
+    <tr>
+        <td align="center">option.healthProbe</td>
+        <td align="center">Object</td>
+        <td align="center">否</td>
+        <td align="center">-</td>
+        <td align="center">实例连接 option 选项</td>
+    <tr>
+    <tr>
+        <td align="center">option.healthProbe.period</td>
+        <td align="center">Int</td>
+        <td align="center">否</td>
+        <td align="center">60</td>
+        <td align="center">心跳检查周期（秒）</td>
+    <tr>
+    <tr>
+        <td align="center">option.healthProbe.timeout</td>
+        <td align="center">Int</td>
+        <td align="center">否</td>
+        <td align="center">5</td>
+        <td align="center">1次检查的超时时间（秒）</td>
+    <tr>
+    <tr>
+        <td align="center">option.maxRedirects</td>
+        <td align="center">Int</td>
+        <td align="center">否</td>
+        <td align="center">5</td>
+        <td align="center">最大重连次数</td>
+    <tr>
+    <tr>
+        <td align="center">option.timeout</td>
+        <td align="center">Int</td>
+        <td align="center">否</td>
+        <td align="center">5</td>
+        <td align="center">请求超时时间（秒）</td>
+    <tr>
+    <tr>
+        <td align="center">option.auto_reconnect</td>
+        <td align="center">boolean</td>
+        <td align="center">否</td>
+        <td align="center">true</td>
+        <td align="center">是否开启自动重连</td>
+    <tr>
+</table>
 #### 3.事件说明
-事件名称 | 参数说明 |  备注
---- | --- |--- 
-ready | 无参数 | 连接成功后事件
-error | 无参数 | 错误事件
+<table>
+    <tr>
+        <td colspan="5" bgcolor = "#808000" align="center">事件说明</td>
+    <tr>
+    <tr>
+        <td align="center">事件名称</td>
+        <td align="center"> 参数说明</td>
+        <td align="center">备注</td>
+    <tr>
+    <tr>
+        <td align="center">ready</td>
+        <td align="center"> 无参数</td>
+        <td align="center">连接成功后事件</td>
+    <tr>
+    <tr>
+        <td align="center">error</td>
+        <td align="center"> 无参数</td>
+        <td align="center">错误事件</td>
+    <tr>
+</table>
 ### 2.JAVA SDK
 ### 3.Golang SDK
 ### 4.Python SDK
