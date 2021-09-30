@@ -41,70 +41,70 @@ run()
         <td align="center"> 类型</td>
         <td align="center">是否必填</td>
         <td align="center"> 默认值</td>
-        <td align="center">说明</td>
+        <td align="left">说明</td>
     <tr>
     <tr>
-        <td align="center">url</td>
+        <td align="left">url</td>
         <td align="center">String</td>
         <td align="center">是</td>
         <td align="center">-</td>
-        <td align="center">gum-svc 服务 BaseUrl</td>
+        <td align="left">gum-svc 服务 BaseUrl</td>
     <tr>
     <tr>
-        <td align="center">option</td>
+        <td align="left">option</td>
         <td align="center">Object</td>
         <td align="center">是</td>
         <td align="center">-</td>
-        <td align="center">实例连接 option 选项</td>
+        <td align="left">实例连接 option 选项</td>
     <tr>
     <tr>
-        <td align="center">option.healthPath</td>
+        <td align="left">option.healthPath</td>
         <td align="center">String</td>
         <td align="center">否</td>
         <td align="center">/health</td>
-        <td align="center">保持连接健康，检查心跳地址</td>
+        <td align="left">保持连接健康，检查心跳地址</td>
     <tr>
     <tr>
-        <td align="center">option.healthProbe</td>
+        <td align="left">option.healthProbe</td>
         <td align="center">Object</td>
         <td align="center">否</td>
         <td align="center">-</td>
-        <td align="center">实例连接 option 选项</td>
+        <td align="left">实例连接 option 选项</td>
     <tr>
     <tr>
-        <td align="center">option.healthProbe.period</td>
+        <td align="left">option.healthProbe.period</td>
         <td align="center">Int</td>
         <td align="center">否</td>
         <td align="center">60</td>
-        <td align="center">心跳检查周期（秒）</td>
+        <td align="left">心跳检查周期（秒）</td>
     <tr>
     <tr>
-        <td align="center">option.healthProbe.timeout</td>
+        <td align="left">option.healthProbe.timeout</td>
         <td align="center">Int</td>
         <td align="center">否</td>
         <td align="center">5</td>
-        <td align="center">1次检查的超时时间（秒）</td>
+        <td align="left">1次检查的超时时间（秒）</td>
     <tr>
     <tr>
-        <td align="center">option.maxRedirects</td>
+        <td align="left">option.maxRedirects</td>
         <td align="center">Int</td>
         <td align="center">否</td>
         <td align="center">5</td>
-        <td align="center">最大重连次数</td>
+        <td align="left">最大重连次数</td>
     <tr>
     <tr>
-        <td align="center">option.timeout</td>
+        <td align="left">option.timeout</td>
         <td align="center">Int</td>
         <td align="center">否</td>
         <td align="center">5</td>
-        <td align="center">请求超时时间（秒）</td>
+        <td align="left">请求超时时间（秒）</td>
     <tr>
     <tr>
-        <td align="center">option.auto_reconnect</td>
+        <td align="left">option.auto_reconnect</td>
         <td align="center">boolean</td>
         <td align="center">否</td>
         <td align="center">true</td>
-        <td align="center">是否开启自动重连</td>
+        <td align="left">是否开启自动重连</td>
     <tr>
 </table>
 
@@ -120,14 +120,14 @@ run()
         <td align="center">备注</td>
     <tr>
     <tr>
-        <td align="center">ready</td>
+        <td align="left">ready</td>
         <td align="center"> 无参数</td>
-        <td align="center">连接成功后事件</td>
+        <td align="left">连接成功后事件</td>
     <tr>
     <tr>
-        <td align="center">error</td>
+        <td align="left">error</td>
         <td align="center"> 无参数</td>
-        <td align="center">错误事件</td>
+        <td align="left">错误事件</td>
     <tr>
 </table>
 

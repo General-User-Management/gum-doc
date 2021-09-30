@@ -1,19 +1,53 @@
 # 客户端API列表
 ## 1. 给角色增加一个api权限
-说明项 | 描述
---- |--- |
-名字 | **addPolicy**
-作用 | 给某个角色增加一个API接口的权限
-举例 | 给`系统管理员`增加`POST`请求到URL为`/api/v1/mock/status`的权限 
-使用 | client.addPolicy("系统管理员", "/api/v1/mock/status", "POST")
+<table>
+    <tr>
+        <td align="center"  bgcolor = "#808000" >说明项</td>
+        <td align="center"  bgcolor = "#808000" > 描述</td>
+    <tr>
+    <tr>
+        <td align="left">名字</td>
+        <td align="left"> addPolicy</td>
+    <tr>
+    <tr>
+        <td align="left">作用</td>
+        <td align="left">给某个角色增加一个API接口的权限</td>
+    <tr>
+    <tr>
+        <td align="left">举例</td>
+        <td align="left">给 系统管理员 增加 POST 请求到URL为 /api/v1/mock/status 的权限</td>
+    <tr>
+    <tr>
+        <td align="left">使用</td>
+        <td align="left">client.addPolicy("系统管理员", "/api/v1/mock/status", "POST")</td>
+    <tr>
+</table>
 
 ## 2. 批量增加p域
-说明项 | 描述
---- |--- |
-名字 | **addPolicies**
-作用 | 批量给多个不同角色赋予不同权限
-举例 | 给`系统管理员1`增加`GET`、`POST`、`PUT`、`PATCH`、`DELETE`请求到URL为`api/v1/users`的权限；给`系统管理员2`增加`GET`请求到URL为`api/v1/role`为前缀的权限；给`系统管理员3`增加`POST`请求到URL为`api/v1/school/:schoolid/teacher/:teacherid`的RESTful的权限
-使用 | 见下面的代码块
+<table>
+    <tr>
+        <td align="center"  bgcolor = "#808000" >说明项</td>
+        <td align="center"  bgcolor = "#808000" > 描述</td>
+    <tr>
+    <tr>
+        <td align="left">名字</td>
+        <td align="left"> addPolicies</td>
+    <tr>
+    <tr>
+        <td align="left">作用</td>
+        <td align="left">批量给多个不同角色赋予不同权限</td>
+    <tr>
+    <tr>
+        <td align="left">举例</td>
+        <td align="left">1.给系统管理员1增加GET、POST、PUT、PATCH、DELETE请求到URL为`api/v1/users`的权限；
+        2.给系统管理员2增加GET请求到URL为api/v1/role为前缀的权限；
+        3.给系统管理员3增加POST请求到URLapi/v1/school/:schoolid/teacher/:teacherid的RESTful的权限</td>
+    <tr>
+    <tr>
+        <td align="left">使用</td>
+        <td align="left">见下面的代码块</td>
+    <tr>
+</table>
 ```
 client.addPolicies([
                 [
@@ -34,13 +68,30 @@ client.addPolicies([
             ])
 ```
 
+
 ## 3. 给用户赋予某个角色
-说明项 | 描述
---- |--- |
-名字 | **addRoleForUser**
-作用 | 给某个用户赋予某个角色（某个角色里面增加某个用户）
-举例 | 给`zhangsan`这个用户赋予为`管理员`这个角色
-使用 | client.addRoleForUser("zhangsan", "管理员")
+<table>
+    <tr>
+        <td align="center"  bgcolor = "#808000" >说明项</td>
+        <td align="center"  bgcolor = "#808000" > 描述</td>
+    <tr>
+    <tr>
+        <td align="left">名字</td>
+        <td align="left">addRoleForUser</td>
+    <tr>
+    <tr>
+        <td align="left">作用</td>
+        <td align="left">给某个用户赋予某个角色（某个角色里面增加某个用户）</td>
+    <tr>
+    <tr>
+        <td align="left">举例</td>
+        <td align="left">给zhangsan这个用户赋予为管理员这个角色</td>
+    <tr>
+    <tr>
+        <td align="left">使用</td>
+        <td align="left">client.addRoleForUser("zhangsan", "管理员")</td>
+    <tr>
+</table>
 ## 4. 获取到用户拥有的权限
 ## 5. 获取角色拥有的权限
 ## 6. 获取用户拥有的角色
