@@ -107,7 +107,9 @@ run()
         <td align="center">是否开启自动重连</td>
     <tr>
 </table>
+
 #### 3.事件说明
+
 <table>
     <tr>
         <td colspan="5" bgcolor = "#808000" align="center">事件说明</td>
@@ -128,6 +130,7 @@ run()
         <td align="center">错误事件</td>
     <tr>
 </table>
+
 ### 2.JAVA SDK
 ### 3.Golang SDK
 ### 4.Python SDK
