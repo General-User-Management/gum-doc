@@ -48,7 +48,8 @@
         <td align="left">见下面的代码块</td>
     <tr>
 </table>
-```
+
+```js
 client.addPolicies([
                 [
                     "系统管理员1",
@@ -67,7 +68,6 @@ client.addPolicies([
                 ]
             ])
 ```
-
 
 ## 3. 给用户赋予某个角色
 <table>
@@ -92,6 +92,7 @@ client.addPolicies([
         <td align="left">client.addRoleForUser("zhangsan", "管理员")</td>
     <tr>
 </table>
+
 ## 4. 获取到用户拥有的权限
 ## 5. 获取角色拥有的权限
 ## 6. 获取用户拥有的角色
