@@ -32,16 +32,26 @@ run()
 ```
 #### 2.option 参数说明
 *gumClient.connect(url,option)* 中的 `url/option` 参数说明如下
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.title {
+  font-size: 100%;
+  font-weight: bold;
+}
+</style>
 <table>
     <tr>
-        <td colspan="5" bgcolor = "#808000" align="center">option 参数说明</td>
+        <td colspan="5" bgcolor = "#808000" align="center" class="title">option 参数说明</td>
     <tr>
-    <tr>
-        <td align="center">参数</td>
-        <td align="center"> 类型</td>
-        <td align="center">是否必填</td>
-        <td align="center"> 默认值</td>
-        <td align="left">说明</td>
+    <tr class="title">
+        <td align="center" bgcolor = "#C0C0C0">参数</td>
+        <td align="center" bgcolor = "#C0C0C0"> 类型</td>
+        <td align="center" bgcolor = "#C0C0C0">是否必填</td>
+        <td align="center" bgcolor = "#C0C0C0"> 默认值</td>
+        <td align="left" bgcolor = "#C0C0C0">说明</td>
     <tr>
     <tr>
         <td align="left">url</td>
@@ -112,12 +122,12 @@ run()
 
 <table>
     <tr>
-        <td colspan="5" bgcolor = "#808000" align="center">事件说明</td>
+        <td colspan="5" bgcolor = "#808000" align="center" class="title">事件说明</td>
     <tr>
-    <tr>
-        <td align="center">事件名称</td>
-        <td align="center"> 参数说明</td>
-        <td align="center">备注</td>
+    <tr  class="title">
+        <td align="center" bgcolor = "#C0C0C0">事件名称</td>
+        <td align="center" bgcolor = "#C0C0C0"> 参数说明</td>
+        <td align="center" bgcolor = "#C0C0C0">备注</td>
     <tr>
     <tr>
         <td align="left">ready</td>

@@ -1,9 +1,19 @@
 # 客户端API列表
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.title {
+  font-size: 100%;
+  font-weight: bold;
+}
+</style>
 ## 1. 给角色增加一个api权限
 <table>
-    <tr>
-        <td align="center"  bgcolor = "#808000" >说明项</td>
-        <td align="center"  bgcolor = "#808000" > 描述</td>
+    <tr class="title">
+        <td align="center"  bgcolor = "#C0C0C0" >说明项</td>
+        <td align="center"  bgcolor = "#C0C0C0" > 描述</td>
     <tr>
     <tr>
         <td align="left">名字</td>
@@ -25,9 +35,9 @@
 
 ## 2. 批量增加p域
 <table>
-    <tr>
-        <td align="center"  bgcolor = "#808000" >说明项</td>
-        <td align="center"  bgcolor = "#808000" > 描述</td>
+    <tr class="title">
+        <td align="center"  bgcolor = "#C0C0C0" >说明项</td>
+        <td align="center"  bgcolor = "#C0C0C0" > 描述</td>
     <tr>
     <tr>
         <td align="left">名字</td>
@@ -39,9 +49,9 @@
     <tr>
     <tr>
         <td align="left">举例</td>
-        <td align="left">1.给系统管理员1增加GET、POST、PUT、PATCH、DELETE请求到URL为`api/v1/users`的权限；
-        2.给系统管理员2增加GET请求到URL为api/v1/role为前缀的权限；
-        3.给系统管理员3增加POST请求到URLapi/v1/school/:schoolid/teacher/:teacherid的RESTful的权限</td>
+        <td align="left">1.给<nobr style="font-weight: bold">系统管理员1</nobr>增加GET、POST、PUT、PATCH、DELETE请求到URL为`api/v1/users`的权限；<br>
+        2.给<nobr style="font-weight: bold">系统管理员2</nobr>增加GET请求到URL为api/v1/role为前缀的权限；<br>
+        3.给<nobr style="font-weight: bold">系统管理员3</nobr>增加POST请求到URLapi/v1/school/:schoolid/teacher/:teacherid的RESTful的权限</td>
     <tr>
     <tr>
         <td align="left">使用</td>
@@ -71,9 +81,9 @@ client.addPolicies([
 
 ## 3. 给用户赋予某个角色
 <table>
-    <tr>
-        <td align="center"  bgcolor = "#808000" >说明项</td>
-        <td align="center"  bgcolor = "#808000" > 描述</td>
+    <tr class="title">
+        <td align="center"  bgcolor = "#C0C0C0" >说明项</td>
+        <td align="center"  bgcolor = "#C0C0C0" > 描述</td>
     <tr>
     <tr>
         <td align="left">名字</td>
