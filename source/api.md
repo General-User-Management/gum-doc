@@ -17,7 +17,7 @@ table, th, td {
     <tr>
     <tr>
         <td align="left">名字</td>
-        <td align="left"> addPolicy</td>
+        <td align="left" style="font-weight: bold"> addPolicy</td>
     <tr>
     <tr>
         <td align="left">作用</td>
@@ -41,7 +41,7 @@ table, th, td {
     <tr>
     <tr>
         <td align="left">名字</td>
-        <td align="left"> addPolicies</td>
+        <td align="left" style="font-weight: bold"> addPolicies</td>
     <tr>
     <tr>
         <td align="left">作用</td>
@@ -49,9 +49,9 @@ table, th, td {
     <tr>
     <tr>
         <td align="left">举例</td>
-        <td align="left">1.给<nobr style="font-weight: bold">系统管理员1</nobr>增加GET、POST、PUT、PATCH、DELETE请求到URL为`api/v1/users`的权限；<br>
-        2.给<nobr style="font-weight: bold">系统管理员2</nobr>增加GET请求到URL为api/v1/role为前缀的权限；<br>
-        3.给<nobr style="font-weight: bold">系统管理员3</nobr>增加POST请求到URLapi/v1/school/:schoolid/teacher/:teacherid的RESTful的权限</td>
+        <td align="left">1.给<nobr style="font-weight: bold">系统管理员1</nobr>增加 GET、POST、PUT、PATCH、DELETE 请求到URL为`api/v1/users`的权限；<br>
+        2.给<nobr style="font-weight: bold">系统管理员2</nobr>增加 GET 请求到 URL 为 api/v1/role 为前缀的权限；<br>
+        3.给<nobr style="font-weight: bold">系统管理员3</nobr>增加 POST 请求到URL 为 api/v1/school/:schoolid/teacher/:teacherid 的 RESTful 的权限</td>
     <tr>
     <tr>
         <td align="left">使用</td>
@@ -67,12 +67,12 @@ client.addPolicies([
                     "(GET)|(POST)|(PUT)|(PATCH)|(DELETE)"
                 ],
                 [
-                    "机构管理员2",
+                    "系统管理员2",
                     "api/v1/role/*",
                     "GET"
                 ],
                 [
-                    "机构管理员3",
+                    "系统管理员3",
                     "api/v1/school/:schoolid/teacher/:teacherid",
                     "POST"
                 ]
@@ -87,7 +87,7 @@ client.addPolicies([
     <tr>
     <tr>
         <td align="left">名字</td>
-        <td align="left">addRoleForUser</td>
+        <td align="left" style="font-weight: bold">addRoleForUser</td>
     <tr>
     <tr>
         <td align="left">作用</td>
@@ -95,7 +95,7 @@ client.addPolicies([
     <tr>
     <tr>
         <td align="left">举例</td>
-        <td align="left">给zhangsan这个用户赋予为管理员这个角色</td>
+        <td align="left">给<nobr style="font-weight: bold">zhangsan</nobr>这个用户赋予为管理员这个角色</td>
     <tr>
     <tr>
         <td align="left">使用</td>
@@ -104,7 +104,100 @@ client.addPolicies([
 </table>
 
 ## 4. 获取到用户拥有的权限
+<table>
+    <tr class="title">
+        <td align="center"  bgcolor = "#C0C0C0" >说明项</td>
+        <td align="center"  bgcolor = "#C0C0C0" > 描述</td>
+    <tr>
+    <tr>
+        <td align="left">名字</td>
+        <td align="left" style="font-weight: bold">getImplicitPermissionsForUser</td>
+    <tr>
+    <tr>
+        <td align="left">作用</td>
+        <td align="left">获取某个用户拥有的所有角色的所有权限列表</td>
+    <tr>
+    <tr>
+        <td align="left">举例</td>
+        <td align="left">获取<nobr style="font-weight: bold">hyx</nobr>这个用户所有API访问权限（包括提供API权限的角色）</td>
+    <tr>
+    <tr>
+        <td align="left">使用</td>
+        <td align="left">client.getImplicitPermissionsForUser("hyx")</td>
+    <tr>
+    <tr>
+        <td align="left">返回示例</td>
+        <td align="left">见下面所示(data字段)</td>
+    <tr>
+</table>
+```json
+{
+    "code": 0,
+    "data": [
+        [
+            "机构管理员",
+            "/api/v1/check",
+            "POST"
+        ],
+        [
+            "系统管理员1",
+            "api/v1/users",
+            "(GET)|(POST)|(PUT)|(PATCH)|(DELETE)"
+        ],
+        [
+            "系统管理员1",
+            "/api/v1/mock/status",
+            "DELETE"
+        ]
+    ]
+}
+```
+
 ## 5. 获取角色拥有的权限
+<table>
+    <tr class="title">
+        <td align="center"  bgcolor = "#C0C0C0" >说明项</td>
+        <td align="center"  bgcolor = "#C0C0C0" > 描述</td>
+    <tr>
+    <tr>
+        <td align="left">名字</td>
+        <td align="left" style="font-weight: bold">getFilteredNamedPolicy</td>
+    <tr>
+    <tr>
+        <td align="left">作用</td>
+        <td align="left">获取某个角色的所有权限列表</td>
+    <tr>
+    <tr>
+        <td align="left">举例</td>
+        <td align="left">获取<nobr style="font-weight: bold">系统管理员1</nobr>这个角色所有API访问权限</td>
+    <tr>
+    <tr>
+        <td align="left">使用</td>
+        <td align="left">client.getFilteredNamedPolicy("系统管理员1")</td>
+    <tr>
+    <tr>
+        <td align="left">返回示例</td>
+        <td align="left">见下面所示(data字段)</td>
+    <tr>
+</table>
+```json
+{
+    "code": 0,
+    "data": [
+        [
+            "系统管理员1",
+            "api/v1/users",
+            "(GET)|(POST)|(PUT)|(PATCH)|(DELETE)"
+        ],
+        [
+            "系统管理员1",
+            "/api/v1/mock/status",
+            "DELETE"
+        ]
+    ]
+}
+```
+
 ## 6. 获取用户拥有的角色
 ## 7. 获取角色拥有的用户
 ## 8. 获取所有的实体
