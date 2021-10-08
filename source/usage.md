@@ -1,4 +1,12 @@
 # 用法
+## 接入方式
+### 1.SDK 接入方式
+
+<img src="./_static/SDK-system-access.png" alt="SDKSystemAccess" width="100%">
+
+### 2.API 接入方式
+<img src="./_static/API-system-access.png" alt="APISystemAccess.png" width="100%">
+
 ## 前端接入指南
 ## 后端接入指南
 ## 客户端(SDK)使用指南
